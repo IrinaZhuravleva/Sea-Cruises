@@ -1,0 +1,86 @@
+@media (max-width: 767px) { 
+  .container {
+    width: 290px;
+    flex-direction: column;
+  }
+  .main-nav {
+    width: 290px;
+    justify-content: space-between;
+  }
+  .logo-image p {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -1.25px;
+  }
+
+  .main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__links li,
+  .footer__social,
+  .footer__contacts {
+    text-align: center;
+  }
+}
+
+
+
+@media (min-width: 768px) { 
+  .container,
+  .main-nav {
+    width: 710px;
+     justify-content: space-between;
+  }
+  ul.menu {
+  display: flex;
+  justify-content: space-between; 
+  list-style-type: none;
+  margin-left: 200px;
+  width: 350px;
+  }
+
+  .logo-image p {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 48px;
+    
+    letter-spacing: -1.8px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .main-nav {
+      width: 1130px;
+  }
+
+  .logo-image {
+    h2 {
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 48px;
+      letter-spacing: 1.8px;
+    }
+    p {
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -2.5px;
+  }
+}
+
+  .card {
+    width: 555px;
+    height: 630px;
+    & img {
+      /* Style for "lighthouse" */
+      width: 555px;
+      height: 437px;
+    }
+  }
+}
