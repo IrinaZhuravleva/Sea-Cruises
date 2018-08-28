@@ -114,11 +114,33 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/beach-desk.png": {
+		"ft": 32768,
+		"iS": 142792,
+		"oA": 0,
+		"oAP": "\/img\/beach-desk.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/beach.png": {
 		"ft": 32768,
 		"iS": 209497,
 		"oA": 0,
 		"oAP": "\/img\/beach.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/bg-desk.png": {
+		"ft": 32768,
+		"iS": 1079401,
+		"oA": 0,
+		"oAP": "\/img\/bg-desk.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -167,6 +189,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/harbor-desk.png": {
+		"ft": 32768,
+		"iS": 231336,
+		"oA": 0,
+		"oAP": "\/img\/harbor-desk.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/harbor.png": {
 		"ft": 32768,
 		"iS": 179421,
@@ -200,6 +233,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/kater-desk.png": {
+		"ft": 32768,
+		"iS": 153129,
+		"oA": 0,
+		"oAP": "\/img\/kater-desk.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/kater.png": {
 		"ft": 32768,
 		"iS": 216867,
@@ -216,6 +260,17 @@
 		"iS": 424805,
 		"oA": 0,
 		"oAP": "\/img\/lighthouse-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/lighthouse-desk.png": {
+		"ft": 32768,
+		"iS": 424805,
+		"oA": 0,
+		"oAP": "\/img\/lighthouse-desk.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -282,6 +337,17 @@
 		"iS": 207798,
 		"oA": 0,
 		"oAP": "\/img\/sea-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/sea-desk.png": {
+		"ft": 32768,
+		"iS": 207798,
+		"oA": 0,
+		"oAP": "\/img\/sea-desk.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

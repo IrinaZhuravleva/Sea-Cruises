@@ -3,10 +3,21 @@
     width: 290px;
     flex-direction: column;
   }
+
+  .container_x {
+    width: 290px;
+    flex-direction: column;
+  }
+
   .main-nav {
     width: 290px;
     justify-content: space-between;
   }
+
+  .card:nth-of-type(5) {
+    display: none;
+  }
+
   .logo-image p {
     font-size: 50px;
     font-weight: 400;
@@ -28,13 +39,11 @@
   }
 }
 
-
-
 @media (min-width: 768px) { 
   .container,
   .main-nav {
     width: 710px;
-     justify-content: space-between;
+    justify-content: space-between;
   }
   ul.menu {
   display: flex;
@@ -44,12 +53,42 @@
   width: 350px;
   }
 
-  .logo-image p {
-    font-size: 50px;
-    font-weight: 400;
-    line-height: 48px;
-    
-    letter-spacing: -1.8px;
+  // .cards 
+  .container_x {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+  .card {
+    width: 345px;
+    height: 508px;
+    background-color: #ffffff;
+    &:nth-of-type(5) {
+      display: none;
+    }
+    img {
+      width: 345px;
+      height: 272px;
+    }
+  }
+
+  .logo__image {
+    h2 {
+      padding-bottom: 10px;
+      
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 48px;
+      letter-spacing: 1.3px;
+    }
+    p {
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 48px;
+      
+      letter-spacing: -1.8px;
+    }
   }
 }
 
@@ -57,30 +96,92 @@
   .container,
   .main-nav {
       width: 1130px;
+      // width: 1330px;
   }
 
-  .logo-image {
+  .navigation {
+    min-height: 647px;
+  }
+
+  .logo__image {
     h2 {
       font-size: 36px;
       font-weight: 400;
       line-height: 48px;
       letter-spacing: 1.8px;
+      padding-bottom: 40px;
     }
     p {
-    font-size: 100px;
-    font-weight: 400;
-    line-height: 48px;
-    letter-spacing: -2.5px;
+      font-size: 100px;
+      font-weight: 400;
+      line-height: 48px;
+      letter-spacing: -2.5px;
+      padding-bottom: 50px;
+    }
   }
-}
+
+  .cards {
+    width: 1220px;
+  // height: 1122px;
+  }
+  .container_x {
+    display: block;
+    width: 1200px;
+  /*   width: 1220px;
+    height: 1122px; */
+    background-color: yellow;
+    color: green;
+  }
 
   .card {
+    // display: block;
     width: 555px;
-    height: 630px;
-    & img {
-      /* Style for "lighthouse" */
+    height: 628px;
+    margin: 10px 11px;
+    float: left;
+    img {
       width: 555px;
       height: 437px;
     }
+    &:nth-of-type(2) {
+      margin: 11px 11px;
+      height: 304px;
+       & img {
+        height: 113px;
+      }
+    }
+    &:nth-of-type(3) {
+      margin: 11px 11px;
+      height: 304px;
+       & img {
+        height: 113px;
+      }
+    }
+
+    &:nth-of-type(5) {
+      display: block;
+    }
   }
+
+  .hit__special, .discount__special {
+    left: 410px;
+  }
+
+   .clearfix {
+    clear: both;
+    background-color: #e74c3c;
+  }
+
 }
+
+
+     // .card_common {
+  //   display: flex;
+  //   flex-direction: column;
+  //   // background-color: #ffffff;
+  //   text-align: left;
+  //   margin-bottom: 25px;
+  //   position: relative;
+  //   z-index: 1;
+    
+  // }

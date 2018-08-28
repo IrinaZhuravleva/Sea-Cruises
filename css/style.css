@@ -9,9 +9,10 @@ body {
 .navigation {
   width: 100%;
   margin: 0 auto;
-  background-image: url(../img/bg-header.png);
+  background-image: url(../img/bg-desk.png);
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-color: #f3f3f3; }
 
 .container {
   margin: 0 auto;
@@ -80,15 +81,10 @@ ul.menu {
     font-weight: 400; }
 
 .logo__image {
-  margin: 85px auto 0; }
+  margin: 35px auto 0; }
   .logo__image h2 {
-    padding-bottom: 10px;
     color: #0d3351;
-    font-family: "Roboto Slab", serif;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 48px;
-    letter-spacing: 1.3px; }
+    font-family: "Roboto Slab", serif; }
   .logo__image p {
     color: #0d3351;
     font-family: "Roboto Slab", serif;
@@ -138,10 +134,24 @@ button:after {
   to {
     transform: translateY(0%); } }
 
+.box {
+  width: 555px;
+  height: 628px;
+  background-color: green;
+  margin: 10px 10px;
+  float: left; }
+
+.boxs {
+  width: 555px;
+  height: 304px;
+  background-color: red;
+  margin: 24px 25px;
+  float: left; }
+
 .catalog {
   background-color: #f3f3f3; }
   .catalog h3 {
-    padding-top: 65px;
+    padding-top: 115px;
     color: #0d3351;
     font-family: "Roboto Slab", serif;
     font-size: 26px;
@@ -171,10 +181,10 @@ button:after {
       background-image: url(../img/arrow.png); }
 
 .cards {
-  margin-top: 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
+  margin-top: 35px; }
+
+.cards {
+  margin-top: 35px; }
 
 .card {
   background-color: #ffffff;
@@ -221,8 +231,7 @@ button:after {
   background-image: url(../img/flag_red.svg); }
 
 .card-description {
-  width: 282px;
-  margin: 30px auto 40px 30px; }
+  margin: 30px auto 10px 30px; }
   .card-description h4 {
     color: #00a2dd;
     font-family: "Roboto Slab", serif;
@@ -230,12 +239,10 @@ button:after {
     font-weight: 400;
     letter-spacing: 0.9px;
     padding-bottom: 7px; }
-  .card-description__title {
-    min-height: 63px; }
-    .card-description__title p {
-      font-weight: bold;
-      display: inline;
-      line-height: 24px; }
+  .card-description__title p {
+    font-weight: bold;
+    display: inline;
+    line-height: 24px; }
   .card-description__price {
     padding-top: 15px;
     color: #0d3351;
@@ -243,8 +250,7 @@ button:after {
     font-size: 30px;
     font-weight: 400;
     line-height: 48px;
-    letter-spacing: 1.5px;
-    margin-bottom: 45px; }
+    letter-spacing: 1.5px; }
     .card-description__price span.out {
       opacity: 0.55;
       color: #0d3351;
@@ -382,9 +388,14 @@ ul.footer__links {
   .container {
     width: 290px;
     flex-direction: column; }
+  .container_x {
+    width: 290px;
+    flex-direction: column; }
   .main-nav {
     width: 290px;
     justify-content: space-between; }
+  .card:nth-of-type(5) {
+    display: none; }
   .logo-image p {
     font-size: 50px;
     font-weight: 400;
@@ -411,7 +422,26 @@ ul.footer__links {
     list-style-type: none;
     margin-left: 200px;
     width: 350px; }
-  .logo-image p {
+  .container_x {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .card {
+    width: 345px;
+    height: 508px;
+    background-color: #ffffff; }
+    .card:nth-of-type(5) {
+      display: none; }
+    .card img {
+      width: 345px;
+      height: 272px; }
+  .logo__image h2 {
+    padding-bottom: 10px;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 1.3px; }
+  .logo__image p {
     font-size: 50px;
     font-weight: 400;
     line-height: 48px;
@@ -421,20 +451,51 @@ ul.footer__links {
   .container,
   .main-nav {
     width: 1130px; }
-  .logo-image h2 {
+  .navigation {
+    min-height: 647px; }
+  .logo__image h2 {
     font-size: 36px;
     font-weight: 400;
     line-height: 48px;
-    letter-spacing: 1.8px; }
-  .logo-image p {
+    letter-spacing: 1.8px;
+    padding-bottom: 40px; }
+  .logo__image p {
     font-size: 100px;
     font-weight: 400;
     line-height: 48px;
-    letter-spacing: -2.5px; }
+    letter-spacing: -2.5px;
+    padding-bottom: 50px; }
+  .cards {
+    width: 1220px; }
+  .container_x {
+    display: block;
+    width: 1200px;
+    /*   width: 1220px;
+    height: 1122px; */
+    background-color: yellow;
+    color: green; }
   .card {
     width: 555px;
-    height: 630px; }
+    height: 628px;
+    margin: 10px 11px;
+    float: left; }
     .card img {
-      /* Style for "lighthouse" */
       width: 555px;
-      height: 437px; } }
+      height: 437px; }
+    .card:nth-of-type(2) {
+      margin: 11px 11px;
+      height: 304px; }
+      .card:nth-of-type(2) img {
+        height: 113px; }
+    .card:nth-of-type(3) {
+      margin: 11px 11px;
+      height: 304px; }
+      .card:nth-of-type(3) img {
+        height: 113px; }
+    .card:nth-of-type(5) {
+      display: block; }
+  .hit__special, .discount__special {
+    left: 410px; }
+  .clearfix {
+    clear: both;
+    background-color: #e74c3c; } }

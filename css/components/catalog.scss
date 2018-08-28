@@ -3,7 +3,7 @@
 	
 	background-color: #f3f3f3;
 	h3 {
-		padding-top: 65px;
+		padding-top: 115px;
 		color: #0d3351;
 		font-family: $robo;
 		font-size: 26px;
@@ -38,10 +38,22 @@
 
 .cards {
 	margin-top: 35px;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
 }
+
+//.cards {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	flex-wrap: wrap;
+// }
+
+.cards {
+	margin-top: 35px;
+	}
+
+// .clearfix {
+//   height: 0px;
+//   clear: both;
+// }
 
 .card {
 	background-color: #ffffff;
@@ -49,7 +61,9 @@
 	margin-bottom: 25px;
 	position: relative;
 	z-index: 1;
+  
 }
+
 .card img {
 	width: 345px;
 	height: 272px;
@@ -96,8 +110,9 @@
 }
 
 .card-description {
-	width: 282px;
-	margin: 30px auto 40px 30px;
+	// width: 282px;
+	
+    margin: 30px auto 10px 30px;
 	// position: relative;
 	// &:after {
 	// 		content: "";
@@ -137,7 +152,7 @@
 	}
 		
 	&__title {
-			min-height: 63px;
+			// min-height: 63px;
 			p {
 			font-weight: bold;
 			display: inline;
@@ -152,7 +167,7 @@
 		font-weight: 400;
 		line-height: 48px;
 		letter-spacing: 1.5px;
-		margin-bottom: 45px;
+		// margin-bottom: 45px;
 		span.out {
 			opacity: 0.55;
 			color: #0d3351;
