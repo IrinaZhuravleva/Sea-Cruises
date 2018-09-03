@@ -9,7 +9,7 @@ body {
 .navigation {
   width: 100%;
   margin: 0 auto;
-  background-image: url(../img/bg-desk.png);
+  background-image: url(../img/bg-1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f3f3f3; }
@@ -58,6 +58,8 @@ ul.menu {
       letter-spacing: 0.7px;
       font-family: "Raleway", sans-serif;
       color: #0d3351; }
+      ul.menu li a:hover, ul.menu li a:active {
+        color: #f20542; }
 
 .logo-group {
   display: flex;
@@ -66,7 +68,8 @@ ul.menu {
   text-align: center; }
 
 .phone {
-  width: 146px; }
+  width: 146px;
+  text-align: left; }
   .phone p {
     font-family: "Raleway", sans-serif;
     color: #0d3351;
@@ -107,6 +110,8 @@ button.button__general {
     width: 202px;
     height: 47px;
     background-color: #33c7fd; }
+    button.button__general a:hover, button.button__general a:active {
+      background-color: #f20542; }
 
 .button__logo {
   position: relative; }
@@ -114,7 +119,7 @@ button.button__general {
     content: "";
     width: 45px;
     height: 239px;
-    top: 69px;
+    top: 75px;
     left: 69px;
     position: absolute;
     background-image: url(../img/path.png);
@@ -151,7 +156,7 @@ button:after {
 .catalog {
   background-color: #f3f3f3; }
   .catalog h3 {
-    padding-top: 115px;
+    padding-top: 50px;
     color: #0d3351;
     font-family: "Roboto Slab", serif;
     font-size: 26px;
@@ -179,9 +184,6 @@ button:after {
       background-position: center;
       cursor: pointer;
       background-image: url(../img/arrow.png); }
-
-.cards {
-  margin-top: 35px; }
 
 .cards {
   margin-top: 35px; }
@@ -231,7 +233,21 @@ button:after {
   background-image: url(../img/flag_red.svg); }
 
 .card-description {
-  margin: 30px auto 10px 30px; }
+  position: relative; }
+  .card-description h4:after {
+    content: "";
+    width: 10px;
+    height: 12px;
+    top: 32px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-image: url(../img/arrow_left.png); }
+
+.card-description {
+  margin: 30px auto 10px 30px;
+  position: relative; }
   .card-description h4 {
     color: #00a2dd;
     font-family: "Roboto Slab", serif;
@@ -296,6 +312,8 @@ ul.footer__links {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px; }
+    ul.footer__links a:hover, ul.footer__links a:active {
+      color: #f20542; }
 
 .footer__social {
   width: 200px;
@@ -322,10 +340,10 @@ ul.footer__links {
   z-index: 1; }
 
 .social-btn:hover {
-  background-color: #e74246; }
+  background-color: #f20542; }
 
 .social-btn:active {
-  background-color: #d7373b;
+  background-color: #f20542;
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1); }
 
 .social-btn-ok::before {
@@ -385,6 +403,8 @@ ul.footer__links {
   margin-top: 12px; }
 
 @media (max-width: 767px) {
+  .navigation {
+    height: 583px; }
   .container {
     width: 290px;
     flex-direction: column; }
@@ -394,6 +414,40 @@ ul.footer__links {
   .main-nav {
     width: 290px;
     justify-content: space-between; }
+  .phone {
+    display: none; }
+  .logo__image {
+    margin-top: -15px; }
+    .logo__image h2 {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 48px;
+      letter-spacing: 1px; }
+    .logo__image p {
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 48px;
+      letter-spacing: -1.25px;
+      margin-bottom: 10px; }
+  .button__logo:after {
+    top: 75px; }
+  .catalog h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 1px; }
+  .card {
+    width: 290px;
+    height: 464px; }
+    .card img {
+      width: 290px;
+      height: 228px; }
+    .card-description {
+      margin-left: 15px; }
+    .card-description__title {
+      font-size: 14px; }
+    .card__special {
+      left: 172px; }
   .card:nth-of-type(5) {
     display: none; }
   .logo-image p {
@@ -406,12 +460,17 @@ ul.footer__links {
     flex-direction: column;
     align-items: center;
     text-align: center; }
-  .footer__links li,
+  .footer__links {
+    display: none; }
   .footer__social,
-  .footer__contacts {
-    text-align: center; } }
+  .footer__contacts .phone {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px; } }
 
 @media (min-width: 768px) {
+  .navigation {
+    height: 600px; }
   .container,
   .main-nav {
     width: 710px;
@@ -422,6 +481,8 @@ ul.footer__links {
     list-style-type: none;
     margin-left: 200px;
     width: 350px; }
+  .button__logo:after {
+    top: 90px; }
   .container_x {
     display: flex;
     justify-content: space-between;
@@ -447,12 +508,16 @@ ul.footer__links {
     line-height: 48px;
     letter-spacing: -1.8px; } }
 
+@media (max-width: 1199px) {
+  .card:nth-of-type(1) .card-description h4, .card:nth-of-type(4) .card-description h4 {
+    width: 200px; }
+  .card:nth-of-type(3) .card-description__price {
+    padding-top: 33px; } }
+
 @media (min-width: 1200px) {
   .container,
   .main-nav {
     width: 1130px; }
-  .navigation {
-    min-height: 647px; }
   .logo__image h2 {
     font-size: 36px;
     font-weight: 400;
@@ -465,15 +530,13 @@ ul.footer__links {
     line-height: 48px;
     letter-spacing: -2.5px;
     padding-bottom: 50px; }
+  .catalog h3 {
+    padding-top: 115px; }
   .cards {
     width: 1220px; }
   .container_x {
     display: block;
-    width: 1200px;
-    /*   width: 1220px;
-    height: 1122px; */
-    background-color: yellow;
-    color: green; }
+    width: 1200px; }
   .card {
     width: 555px;
     height: 628px;
@@ -497,5 +560,8 @@ ul.footer__links {
   .hit__special, .discount__special {
     left: 410px; }
   .clearfix {
-    clear: both;
-    background-color: #e74c3c; } }
+    clear: both; }
+  .card-description {
+    position: relative; }
+    .card-description h4:after {
+      top: 8px; } }

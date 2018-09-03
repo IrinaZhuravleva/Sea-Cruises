@@ -16,7 +16,7 @@ body {
 .navigation {
 	width: 100%;
 	margin: 0 auto;
-	background-image: url(../img/bg-desk.png);
+	background-image: url(../img/bg-1.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #f3f3f3;
@@ -42,7 +42,6 @@ ul.menu {
 	display: none;
 	
 	li {
-		// padding-right: 70px;
 		padding-right: 45px;
 		position: relative;
 		&:before,
@@ -77,6 +76,10 @@ ul.menu {
 			letter-spacing: 0.7px;
 			font-family: $rale;
 			color: #0d3351;
+			&:hover,
+    	&:active {
+	      color: #f20542;
+	    }
 		}
 	}
 }
@@ -90,6 +93,7 @@ ul.menu {
 
 .phone {
 	width: 146px;
+	text-align: left;
 	p {
 		font-family: $rale;
 		color: #0d3351;
@@ -138,6 +142,10 @@ button.button__general {
 		width: 202px;
 		height: 47px;
 		background-color: #33c7fd;
+		&:hover,
+  	&:active {
+      background-color: #f20542;
+    }
 	}
 }
 
@@ -147,7 +155,7 @@ button.button__general {
 			content: "";
 			width: 45px;
 			height: 239px;
-			top: 69px;
+			top: 75px;
     	left: 69px;
 			position: absolute;
 			background-image: url(../img/path.png);
@@ -174,6 +182,7 @@ button:after {
   transform: translateY(0%);
   }
 }
+
 //
 
 .box {
@@ -191,22 +200,7 @@ button:after {
   float: left;
 }
 
-// .clearfix {
-//   clear: both;
-//   background-color: #e74c3c;
-// }
-// .container_x {
-// 	width: 1200px;
-// /*   width: 1220px;
-//   height: 1122px; */
-//   background-color: yellow;
-//   color: green;
-// }
-
 @import "components/catalog.scss";
 @import "components/footer.scss";
 @import "components/media.scss";
-
-
-
 

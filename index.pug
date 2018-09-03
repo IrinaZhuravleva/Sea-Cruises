@@ -35,11 +35,12 @@
 					p.sorting Сортировать круизы по цене
 					.cards.container_x.clearfix
 						.card
-							img(src="img/lighthouse-desk.png" width="100%" alt="Lighthouse")
+							picture
+								source(srcset="img/lighthouse.png" media="(max-width: 767px)")
+								source(srcset="img/lighthouse-desk.png" media="(min-width: 1200px)")
+								img(src="img/lighthouse.png" alt="Lighthouse")
 							.card-description
-								h4 
-									| Морской круиз 
-									| в Анапу
+								h4 Морской круиз в&nbspАнапу
 								.card-description__title
 									p Маршрут: 
 									span Сочи-Лазаревское-Геленджик-Анапа
@@ -48,12 +49,15 @@
 									span 10 ч. 0 мин.
 								.card-description__price
 									| 49 000 руб.
-								.card__special.hit__special
+							.card__special.hit__special
 									span Хит продаж		
 						.card
-							img(src="img/kater-desk.png" width="100%" alt="Kater")
+							picture
+								source(srcset="img/kater.png" media="(max-width: 767px)")
+								source(srcset="img/kater-desk.png" media="(min-width: 1200px)")
+								img(src="img/kater.png" alt="Kater")
 							.card-description
-								h4 Обзорная морская прогулка с экскурсией
+								h4 Обзорная морская прогулка с&nbspэкскурсией
 								.card-description__title
 									p Маршрут: 
 									span 
@@ -66,10 +70,13 @@
 								.card-description__price
 									| 5 000 руб. 
 									span.out 15 000 руб.
-								.card__special.discount__special
+							.card__special.discount__special
 									span Акция
 						.card
-							img(src="img/beach-desk.png" width="100%" alt="Beach")
+							picture
+								source(srcset="img/beach.png" media="(max-width: 767px)")
+								source(srcset="img/beach-desk.png" media="(min-width: 1200px)")
+								img(src="img/beach.png" alt="Beach")
 							.card-description
 								h4 Морская прогулка в&nbspГеленджик
 								.card-description__title
@@ -80,11 +87,14 @@
 									span 12 ч. 30 мин.
 								.card-description__price
 									| 7 000 руб. 
-									span.out 15 000 руб.
-								.card__special.discount__special
+									span.out 10 000 руб.
+							.card__special.discount__special
 									span Скидка 10%
 						.card
-							img(src="img/harbor-desk.png" width="100%" alt="Harbor")
+							picture
+								source(srcset="img/harbor.png" media="(max-width: 767px)")
+								source(srcset="img/harbor-desk.png" media="(min-width: 1200px)")
+								img(src="img/harbor.png" alt="Harbor")
 							.card-description
 								h4 Морской круиз в&nbspНовороссийск
 								.card-description__title
@@ -96,9 +106,12 @@
 								.card-description__price
 									| 14 800 руб.
 						.card
-							img(src="img/sea-desk.png" width="100%" alt="Sea")
+							picture
+								source(srcset="img/sea.png" media="(max-width: 767px)")
+								source(srcset="img/sea-desk.png" media="(min-width: 1200px)")
+								img(src="img/sea.png" alt="Sea")
 							.card-description
-								h4 Морская прогулка в Абрау-Дюрсо  
+								h4 Морская прогулка в&nbspАбрау-Дюрсо  
 								.card-description__title
 									p Маршрут: 
 									span Сочи-Абрау-Дюрсо

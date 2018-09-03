@@ -3,7 +3,7 @@
 	
 	background-color: #f3f3f3;
 	h3 {
-		padding-top: 115px;
+		padding-top: 50px;
 		color: #0d3351;
 		font-family: $robo;
 		font-size: 26px;
@@ -44,15 +44,6 @@
 // 	display: flex;
 // 	justify-content: space-between;
 // 	flex-wrap: wrap;
-// }
-
-.cards {
-	margin-top: 35px;
-	}
-
-// .clearfix {
-//   height: 0px;
-//   clear: both;
 // }
 
 .card {
@@ -109,55 +100,62 @@
 	background-image: url(../img/flag_red.svg);
 }
 
-.card-description {
-	// width: 282px;
-	
-    margin: 30px auto 10px 30px;
-	// position: relative;
-	// &:after {
-	// 		content: "";
-	// 		width: 10px;
-	// 		height: 12px;
-	// 		top: 32px;
- //    	// right: 65px;
-	// 		position: absolute;
-	// 		background-repeat: no-repeat;
-	// 		background-position: center;
-	// 		cursor: pointer;
-	// 		background-image: url(../img/arrow_left.png);
+.card {
+	&-description {
+		position: relative;
+		& h4:after {
+			content: "";
+			width: 10px;
+			height: 12px;
+			top: 32px;
+			// left: 10px;
+			position: absolute;
+			background-repeat: no-repeat;
+			background-position: center;
+			cursor: pointer;
+			background-image: url(../img/arrow_left.png);
+		}
+	}
+
+	// &:nth-of-type(1) {
+	// 	&-description h4:after {
+	// 		right: 204px;
 	// 	}
-	// 	&:nth-of-type(1):after {
-	// 		right: 184px;
+	// }
+	// &:nth-of-type(2) {
+	// 	&-description h4:after {
+	// 		right: 235px;
 	// 	}
-	// 	&:nth-of-type(2):after {
-	// 		right: 135px;
-	// 	}
-	// 	&:nth-of-type(3):after {
+	// }
+	// &:nth-of-type(3) {
+	// 	&-description h4:after {
 	// 		right: 137px;
 	// 	}
-	// 	&:nth-of-type(4):after {
+	// }
+	// &:nth-of-type(4) {
+	// 	&-description h4:after {
 	// 		right: 65px;
-		
-	 // }
-
-
-	h4 {
-		color: #00a2dd;
-		font-family: $robo;
-		font-size: 18px;
-		font-weight: 400;
-		letter-spacing: 0.9px;
-		// position: relative;
-		padding-bottom: 7px;
-	}
-		
-	&__title {
-			// min-height: 63px;
-			p {
-			font-weight: bold;
-			display: inline;
-			line-height: 24px;
+	// 	}
+	// }
+}
+	
+	.card-description {
+		margin: 30px auto 10px 30px;
+		position: relative;
+		h4 {
+			color: #00a2dd;
+			font-family: $robo;
+			font-size: 18px;
+			font-weight: 400;
+			letter-spacing: 0.9px;
+			padding-bottom: 7px;
 		}
+		&__title {
+			p {
+				font-weight: bold;
+				display: inline;
+				line-height: 24px;
+			}
 	}
 	&__price {
 		padding-top: 15px;
@@ -167,7 +165,6 @@
 		font-weight: 400;
 		line-height: 48px;
 		letter-spacing: 1.5px;
-		// margin-bottom: 45px;
 		span.out {
 			opacity: 0.55;
 			color: #0d3351;
